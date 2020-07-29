@@ -3,19 +3,22 @@
 #
 # [118] Pascal's Triangle
 #
+from typing import *
+import copy
 
 # @lc code=start
 class Solution:
-    def factorial(self,n):
-        return 1 if n <=  1 else self.factorial(n-1) * n
     def generate(self, numRows: int) -> List[List[int]]:
-        res = []
-        for row_index in range(numRows):
-            row = []
-            for column_index in range(row_index):
-                row.append(self.factorial(row_index-1)/self.factorial(row_index-1)/self.factorial(row_index-column_index))
-
-        # (n-1)!/[(m-1)!(n-m)!]
-        
+        result = []
+        for i in range(numRows):
+            res = [1]
+            current = 1
+            for j in range(i):
+                current = current * (i - j) // (j+1)
+                res.append(current)      
+            result.append(res)
+        return result        
 # @lc code=end
 
+if __name__ == "__main__":
+    print(Solution().generate(5))

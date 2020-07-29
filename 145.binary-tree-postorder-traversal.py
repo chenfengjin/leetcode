@@ -20,11 +20,18 @@ class Solution:
         stack = [root]
         while stack:
             node = stack.pop()
-            result.append(node.val)
-            if node.right:
-                stack.append(node.right)
-            if node.left:
-                stack.append(node.left)
+            left = node.left
+            right = node.right
+            node.left = None
+            node.right = None
+            if left or right:
+                stack.append(node)
+                if right:
+                    stack.append(right)
+                if left:
+                    stack.append(left)
+            else:
+                result.append(node.val)
         return result
         
 # @lc code=end

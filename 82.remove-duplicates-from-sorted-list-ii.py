@@ -14,16 +14,27 @@ class ListNode:
 class Solution:
     def deleteDuplicates(self, head: ListNode) -> ListNode:
         if not head:
-            return None
+            return head
+
+        head1 = ListNode(None)
+        head1.next = head
+        head = head1
+
         current = head
-        left = head
-        right = head
-        while right.next:
-            if left.next.val == right.val:
-                right = right.next
+
+        
+        skip = False
+        while current.next and current.next.next:
+            if current.next.val == current.next.next.val:
+                skip = True
+                current.next = current.next.next
             else:
-                left.next = right
-            right = right.next
+                if skip:
+                    skip = False
+                    current.next = current.next.next
+                else:
+                    current = current.next
+        return head.next
         
         
 # @lc code=end

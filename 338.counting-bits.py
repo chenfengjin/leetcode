@@ -7,11 +7,8 @@
 # @lc code=start
 class Solution:
     def countBits(self, num: int) -> List[int]:
-        # key point: suffix 1 and length of suffix 1 without one and only 1
-        suffix_one_count = [0] * (n+1)
-        suffix_one_length = [0] * (n+1)
-        for i in range(n+1):
-
-        
+        res = [0]
+        while len(res) <= num:
+            res.extend([i+1 for i in res])
+        return res[0:num+1]
 # @lc code=end
-

@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ec09e14-3e67-439b-b937-1696a54985ee" name="Default Changelist" comment="" />
+    <list default="true" id="0ec09e14-3e67-439b-b937-1696a54985ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.leetcode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/103.binary-tree-zigzag-level-order-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/103.binary-tree-zigzag-level-order-traversal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/113.path-sum-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/113.path-sum-ii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/118.pascals-triangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/118.pascals-triangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/119.pascals-triangle-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/119.pascals-triangle-ii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/129.sum-root-to-leaf-numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/129.sum-root-to-leaf-numbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13.roman-to-integer.py" beforeDir="false" afterPath="$PROJECT_DIR$/13.roman-to-integer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/145.binary-tree-postorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/145.binary-tree-postorder-traversal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/205.isomorphic-strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/205.isomorphic-strings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/224.basic-calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/224.basic-calculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/233.number-of-digit-one.py" beforeDir="false" afterPath="$PROJECT_DIR$/233.number-of-digit-one.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/283.move-zeroes.py" beforeDir="false" afterPath="$PROJECT_DIR$/283.move-zeroes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/29.divide-two-integers.py" beforeDir="false" afterPath="$PROJECT_DIR$/29.divide-two-integers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/338.counting-bits.py" beforeDir="false" afterPath="$PROJECT_DIR$/338.counting-bits.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/347.top-k-frequent-elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/347.top-k-frequent-elements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/74.search-a-2-d-matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/74.search-a-2-d-matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/82.remove-duplicates-from-sorted-list-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/82.remove-duplicates-from-sorted-list-ii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/83.remove-duplicates-from-sorted-list.py" beforeDir="false" afterPath="$PROJECT_DIR$/83.remove-duplicates-from-sorted-list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/91.decode-ways.py" beforeDir="false" afterPath="$PROJECT_DIR$/91.decode-ways.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/95.unique-binary-search-trees-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/95.unique-binary-search-trees-ii.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZAgq4ZXLLFpwbJzL3KZGSqWxJQ" />
   <component name="ProjectViewState">
@@ -15,10 +57,41 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="224.basic-calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name=".leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/224.basic-calculator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.224.basic-calculator" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -33,6 +106,7 @@
       <workItem from="1584287503933" duration="122000" />
       <workItem from="1584287630246" duration="238000" />
       <workItem from="1584288012471" duration="76000" />
+      <workItem from="1595955371256" duration="3988000" />
     </task>
     <servers />
   </component>
@@ -40,17 +114,60 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584287851304">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom" timestamp="1595960157278">
+      <screen x="0" y="23" width="1440" height="785" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1584287851304" />
-    <state x="570" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584287574465">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.23.1440.785@0.23.1440.785" timestamp="1595960157278" />
+    <state width="1398" height="265" key="GridCell.Tab.0.center" timestamp="1595960157277">
+      <screen x="0" y="23" width="1440" height="785" />
     </state>
-    <state x="570" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.877@0.23.1440.877" timestamp="1584287574465" />
-    <state x="229" y="89" key="SettingsEditor" timestamp="1584287814515">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="265" key="GridCell.Tab.0.center/0.23.1440.785@0.23.1440.785" timestamp="1595960157277" />
+    <state width="1398" height="265" key="GridCell.Tab.0.left" timestamp="1595960157276">
+      <screen x="0" y="23" width="1440" height="785" />
     </state>
-    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584287814515" />
+    <state width="1398" height="265" key="GridCell.Tab.0.left/0.23.1440.785@0.23.1440.785" timestamp="1595960157276" />
+    <state width="1398" height="265" key="GridCell.Tab.0.right" timestamp="1595960157278">
+      <screen x="0" y="23" width="1440" height="785" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.0.right/0.23.1440.785@0.23.1440.785" timestamp="1595960157278" />
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom" timestamp="1595960157280">
+      <screen x="0" y="23" width="1440" height="785" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.23.1440.785@0.23.1440.785" timestamp="1595960157280" />
+    <state width="1398" height="265" key="GridCell.Tab.1.center" timestamp="1595960157279">
+      <screen x="0" y="23" width="1440" height="785" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.center/0.23.1440.785@0.23.1440.785" timestamp="1595960157279" />
+    <state width="1398" height="265" key="GridCell.Tab.1.left" timestamp="1595960157279">
+      <screen x="0" y="23" width="1440" height="785" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.left/0.23.1440.785@0.23.1440.785" timestamp="1595960157279" />
+    <state width="1398" height="265" key="GridCell.Tab.1.right" timestamp="1595960157280">
+      <screen x="0" y="23" width="1440" height="785" />
+    </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.785@0.23.1440.785" timestamp="1595960157280" />
+    <state x="229" y="54" key="SettingsEditor" timestamp="1595955589459">
+      <screen x="0" y="23" width="1440" height="785" />
+    </state>
+    <state x="229" y="54" key="SettingsEditor/0.23.1440.785@0.23.1440.785" timestamp="1595955589459" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/224.basic-calculator.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="s[right]" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/_leetcode$224_basic_calculator.coverage" NAME="224.basic-calculator Coverage Results" MODIFIED="1595959937120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

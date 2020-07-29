@@ -5,16 +5,12 @@
 #
 
 # @lc code=start
-<<<<<<< HEAD
-class Solution:
-    def romanToInt(self, s: str) -> int:
-        
-# @lc code=end
-
-=======
 
 
 class Solution:
+    # 理解规则是关键
+    # 如果 MCM 是 2100 的话，那1900 如何表示呢?
+    # 所以2100 应该是 MMC
     def romanToInt(self, s: str) -> int:
         m = {
             "I": 1,
@@ -25,6 +21,7 @@ class Solution:
             "D":500,
             "M":1000,
         }
+        total = 0
         current = 0
         for c in s:
             num = m.get(c)
@@ -40,4 +37,3 @@ if __name__ == "__main__":
     # print(Solution().romanToInt('VI'))
     # print(Solution().romanToInt('IV'))
     print(Solution().romanToInt('MCMXCIV'))
->>>>>>> RFC:change mac
