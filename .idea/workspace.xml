@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ec09e14-3e67-439b-b937-1696a54985ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.leetcode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/103.binary-tree-zigzag-level-order-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/103.binary-tree-zigzag-level-order-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/113.path-sum-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/113.path-sum-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/118.pascals-triangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/118.pascals-triangle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/119.pascals-triangle-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/119.pascals-triangle-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/129.sum-root-to-leaf-numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/129.sum-root-to-leaf-numbers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13.roman-to-integer.py" beforeDir="false" afterPath="$PROJECT_DIR$/13.roman-to-integer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/145.binary-tree-postorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/145.binary-tree-postorder-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/205.isomorphic-strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/205.isomorphic-strings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/224.basic-calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/224.basic-calculator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/233.number-of-digit-one.py" beforeDir="false" afterPath="$PROJECT_DIR$/233.number-of-digit-one.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/283.move-zeroes.py" beforeDir="false" afterPath="$PROJECT_DIR$/283.move-zeroes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/29.divide-two-integers.py" beforeDir="false" afterPath="$PROJECT_DIR$/29.divide-two-integers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/338.counting-bits.py" beforeDir="false" afterPath="$PROJECT_DIR$/338.counting-bits.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/347.top-k-frequent-elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/347.top-k-frequent-elements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/74.search-a-2-d-matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/74.search-a-2-d-matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/82.remove-duplicates-from-sorted-list-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/82.remove-duplicates-from-sorted-list-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/83.remove-duplicates-from-sorted-list.py" beforeDir="false" afterPath="$PROJECT_DIR$/83.remove-duplicates-from-sorted-list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/91.decode-ways.py" beforeDir="false" afterPath="$PROJECT_DIR$/91.decode-ways.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/95.unique-binary-search-trees-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/95.unique-binary-search-trees-ii.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +40,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
   <component name="RunManager">
     <configuration name="224.basic-calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -107,6 +85,7 @@
       <workItem from="1584287630246" duration="238000" />
       <workItem from="1584288012471" duration="76000" />
       <workItem from="1595955371256" duration="3988000" />
+      <workItem from="1595994376973" duration="426000" />
     </task>
     <servers />
   </component>
@@ -146,10 +125,10 @@
       <screen x="0" y="23" width="1440" height="785" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.785@0.23.1440.785" timestamp="1595960157280" />
-    <state x="229" y="54" key="SettingsEditor" timestamp="1595955589459">
+    <state x="229" y="54" key="SettingsEditor" timestamp="1595994807411">
       <screen x="0" y="23" width="1440" height="785" />
     </state>
-    <state x="229" y="54" key="SettingsEditor/0.23.1440.785@0.23.1440.785" timestamp="1595955589459" />
+    <state x="229" y="54" key="SettingsEditor/0.23.1440.785@0.23.1440.785" timestamp="1595994807411" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
