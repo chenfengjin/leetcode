@@ -6,21 +6,14 @@
 
 # @lc code=start
 from typing import * 
-# 用哈希表，而不是集合
+
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
-        nums_table = set()
-        for num in nums[0:k]:
-            if num in nums_table:
+        nums_table = {}
+        for index,num in enumerate(nums):
+            if num in nums_table and index - nums_table.get(num) <= k:
                 return True
-            nums_table.add(num)
-
-        for index in range(k,len(nums)):
-            if nums[index]  in nums_table:
-                return True
-            nums_table.add(nums[index])
-            if nums[index-k] in nums_table:
-                nums_table.remove(nums[index-k])
+            nums_table[num] = index
         return False
         
 # @lc code=end
