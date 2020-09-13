@@ -3,39 +3,57 @@
 #
 # [95] Unique Binary Search Trees II
 #
-
 from typing import *
 import copy
-
-
-# @lc code=start
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
-
+# @lc code=start
+# too slow
 class Solution:
+    def __init__(self):
+        self.memory = {}
     def generateTrees(self, n: int) -> List[TreeNode]:
-        if n == 0:
-            return None
-        # if 
-    def helper(self,start,end):
-        if start == end:
-            return [TreeNode(x=start)]
-        result = []
-        for val in range(start,end+1):
-            node = TreeNode(x=val)
-            left_trees = self.helper(start,val)
-            right_trees = self.helper(val+1,end + 1)
-            for left_tree in left_trees:
-                for right_tree in right_trees:
-                    node.left = left_tree
-                    node.right = right_trees
-                    result.append(copy.copy(node))
-        return result
+        self.memory = [[0] * (n +1)] * (n +1)
+        return  self.generateSubTree(list(range(1,n+1)))    
+    def generateSubTree(self,nums):
+        if not nums:  
+            return [] # key point None is an object of NoneType
+        if len(nums) == 1:
+            return [TreeNode(nums[0])]
 
-        
+        # if self.memory[nums[0]][nums[-1]]:
+            # return copy.deepcopy(self.memory[nums[0]][nums[-1]])
+        result = []
+        for i in range(len(nums)):
+            left_subtrees = self.generateSubTree(nums[:i])
+            right_subtrees = self.generateSubTree(nums[i+1:]) if i+1 < len(nums) else []  # key point 2
+            root = TreeNode(nums[i])
+            if left_subtrees:
+                if right_subtrees:
+                    for left_tree in left_subtrees:
+                        for right_tree in right_subtrees:
+                            root.left = left_tree
+                            root.right = right_tree
+                            result.append(copy.deepcopy(root))                   
+                else:
+                    for left_tree in left_subtrees:
+                        root.left = left_tree
+                        result.append(copy.deepcopy(root))                   
+                        
+            else:
+                if right_subtrees:
+                    for right_tree in right_subtrees:
+                        root.right = right_tree
+                        result.append(copy.deepcopy(root))                   
+                else:
+                    result.append(root)
+        # self.memory[nums[0]][nums[-1]] = copy.deepcopy(result)
+        return result
 # @lc code=end
 
+if __name__ == "__main__":
+    print((Solution().generateTrees(4)))

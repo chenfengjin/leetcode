@@ -1,11 +1,11 @@
 #
-# @lc app=leetcode id=116 lang=python3
+# @lc app=leetcode id=117 lang=python3
 #
-# [116] Populating Next Right Pointers in Each Node
+# [117] Populating Next Right Pointers in Each Node II
 #
 
 # @lc code=start
-# """
+"""
 # Definition for a Node.
 class Node:
     def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
@@ -13,9 +13,8 @@ class Node:
         self.left = left
         self.right = right
         self.next = next
-# """
+"""
 class Solution:
-    #  可以考虑一下 follow up
     def connect(self, root: 'Node') -> 'Node':
         if not root:
             return 
@@ -43,7 +42,6 @@ class Solution:
                     current_queue = next_queue
                     next_queue = []
         
-        return  root        
-        
+        return  root                
 # @lc code=end
 

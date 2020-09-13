@@ -3,20 +3,16 @@
 #
 # [34] Find First and Last Position of Element in Sorted Array
 #
-
+from typing import *
 # @lc code=start
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        left = 0 
-        right = len(nums)
-        while left <= right:
-            middle = (left+ right) // 2
-            if nums[middle] ==  target:
-                return middle
-            if nums[middle] > target:
-                right = middle - 1
-            else:
-                left = middle + 1
+        try:
+            return [nums.index(target),len(nums) - list(reversed(nums)).index(target)-1 ]
+        except:
+            return [-1,-1]
         
 # @lc code=end
 
+if __name__ == "__main__":
+    print(Solution().searchRange([5,7,7,8,8,10],8))
