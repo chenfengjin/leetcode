@@ -1,13 +1,13 @@
 #
-# @lc app=leetcode.cn id=46 lang=python3
+# @lc app=leetcode.cn id=47 lang=python3
 #
-# [46] 全排列
+# [47] 全排列 II
 #
 from typing import *
-import copy
 # @lc code=start
 class Solution:
-    def permute(self, nums: List[int]) -> List[List[int]]:
+    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
         result = []
         visited = [False]*len(nums)
         self.helper(result,nums,[],visited)
@@ -17,16 +17,19 @@ class Solution:
             result.append(current[:])
             return
         for index,num  in enumerate(nums):
-            if visited[index]:
+            if visited[index] :
                 continue
+            # TODO 这一行好难写
+            # TODO 就加了这三行
+            elements = [flag for i,flag in enumerate(visited) if i < index and nums[i] == nums[index] ]
+            if elements and  not all(elements):
+                continue            
             visited[index] = True
             current.append(num)
             self.helper(result,nums,current,visited)
             current.pop()
             visited[index] = False
-
-
 # @lc code=end
 
 if __name__ == "__main__":
-    print(Solution().permute([1,2,3]))
+    print(Solution().permuteUnique([1,1,2]))
