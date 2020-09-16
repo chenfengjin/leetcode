@@ -1,1 +1,0 @@
-http://sso.in.zhihu.com/login?next=http%253A%252F%252Fsso.in.zhihu.com%252Fapi%252Fapp%252Foauth%252Fauthorize%253Fclient_id%253Dgrafana%2526redirect_uri%253Dhttps%25253A%25252F%25252Fgf.in.zhihu.com%25252Fsso%25252Fcallback%25253Ffrom%25253D%25252F%2526response_type%253Dcode%2526scope%253Dall&client_id=grafana
