@@ -7,27 +7,26 @@
 # @lc code=start
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:
-        while "**" in p:
-            p.replace("**","*")
-        index_s= 0
-        index_p = 0
-        while index_s  < len(s) and index_p < len(p):
-            if s[index_s] == p[index_p]:
-                index_p += 1
-                index_s += 1
-            elif p[index_p] == '?':
-                index_p += 1
-                index_s += 1
-            elif p[index_p] == '*':
-                index_s = len(index_s) - 1
-            else:
-                return False
-        # return index_p == len(p) and index_s == len(s)
-        
-
-
-
+        if not s or not p:
+            return False
+        dp = [[False] * len(p)]* len(s)
+        # len(s) 行
+        # len(p) 列
+        dp[0][0] = s[0]==p[0] or p[0] in ['*',"?"]
+        for i in range(len(s)):
+            dp[i][0] == True if p[0] == '*' or p[0] == '+' or p[0] == s[i] else False
+        for i in range(len(p)):
+            dp[0][i] = p[i] == '*' or p[i] == '+' or p[i] == s[0]
+        for i in range(1,len(s)):
+            for j in range(1,len(p)):
+                if dp[i-1][j-1] and p[i] in ['*','+'] or s[i] == p[j]:
+                    dp[i][j] = True
+                elif True:
+                    pass
+        return dp[-1][-1]
 
 
 # @lc code=end
 
+if __name__ == "__main__":
+    print(Solution().isMatch("aa","a"))
