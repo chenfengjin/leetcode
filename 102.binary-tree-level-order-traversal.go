@@ -20,13 +20,17 @@ type TreeNode struct {
 *     Right *TreeNode
 * }
  */
+//  keep in sync with 104.maximum-depth-of-binary-tree
 func levelOrder(root *TreeNode) [][]int {
 	if root == nil {
 		return [][]int{}
 	}
+
 	curLayerNode := []*TreeNode{root}
 	result := [][]int{}
+	depth := 0
 	for len(curLayerNode) != 0 {
+		depth := 1
 		curLayerValue := []int{}
 		nextLayerNode := []*TreeNode{}
 		for _, node := range curLayerNode {
