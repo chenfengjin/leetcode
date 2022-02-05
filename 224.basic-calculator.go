@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=224 lang=golang
- *
- * [224] Basic Calculator
+* @lc app=leetcode id=224 lang=golang
+*
+* [224] Basic Calculator
  */
 package main
 
@@ -12,11 +12,18 @@ import (
 	"unicode"
 )
 
+// some key point
+// 1. how to deal with ()
+// 2. how to deal with -
+
 // a small trick
 // just regard + and - as sign rather than plus/minus
 // add all numbers works
 // @lc code=start
 func calculate(s string) int {
+	return calculateUsingStack(s)
+}
+func calculate1(s string) int {
 	//  先去掉所有空格
 	// 	转换成 string 的数组
 	if len(s) == 1 {
@@ -26,7 +33,7 @@ func calculate(s string) int {
 	operators := []string{}
 	left := 0
 	sign := 1
-	// remove all blank
+	// remove all space
 	s = strings.Join(strings.Split(s, " "), "")
 	//  small trick to deal with last operator/operand
 	s = s + "#"
@@ -56,18 +63,62 @@ func calculate(s string) int {
 					op := operators[len(operators)-1]
 
 					switch op {
+					// is op is * or /,do nothing
+					//  is op is + or -, look ahead
 					case "+":
-						operand1 := operands[len(operands)-1]
-						operand2 := operands[len(operands)-2]
-						operands = operands[0 : len(operands)-2]
-						operands = append(operands, operand1+operand2)
-						operators = operators[0 : len(operators)-1]
+						//  add # suffix is realy a good choice
+						if string(s[i]) == "*" || string(s[i]) == "/" {
+							//Dothing if next operator has high priority
+						} else {
+							operand1 := operands[len(operands)-1]
+							operand2 := operands[len(operands)-2]
+							operands = operands[0 : len(operands)-2]
+							operands = append(operands, operand1+operand2)
+							operators = operators[0 : len(operators)-1]
+						}
 					case "-":
+						if string(s[i]) == "*" || string(s[i]) == "/" {
+							//Dothing if next operator has high priority
+						} else {
+							operand1 := operands[len(operands)-1]
+							operand2 := operands[len(operands)-2]
+							operands = operands[0 : len(operands)-2]
+							operands = append(operands, operand2-operand1)
+							operators = operators[0 : len(operators)-1]
+						}
+					case "*":
 						operand1 := operands[len(operands)-1]
 						operand2 := operands[len(operands)-2]
 						operands = operands[0 : len(operands)-2]
-						operands = append(operands, operand2-operand1)
+						operands = append(operands, operand1*operand2)
 						operators = operators[0 : len(operators)-1]
+						{
+							// loop is not neccessary as there is only one element in op stack
+							if len(operators) > 0 {
+								operator := operators[len(operators)-1]
+								if string(operator) == "+" || string(operator) == "-" {
+									operators = operators[0 : len(operators)-1]
+
+									operand1 := operands[len(operands)-1]
+									operand2 := operands[len(operands)-2]
+									operands = operands[0 : len(operands)-2]
+									if operator == "+" {
+										operands = append(operands, operand2+operand1)
+									} else {
+										operands = append(operands, operand2-operand1)
+									}
+								}
+							}
+						}
+					case "/":
+						operand1 := operands[len(operands)-1]
+						operand2 := operands[len(operands)-2]
+						operands = operands[0 : len(operands)-2]
+						operands = append(operands, operand2/operand1)
+						operators = operators[0 : len(operators)-1]
+						{
+
+						}
 					case "(":
 					case ")":
 					}
@@ -98,7 +149,10 @@ func calculate(s string) int {
 						operands = append(operands, 0)
 					}
 					operators = append(operators, string(s[left]))
-
+				case "*":
+					fallthrough
+				case "/":
+					operators = append(operators, string(s[left]))
 				case "(":
 					// 1234 + 1234 +1234 +	(   1234 + 1234)
 					//						^	^
@@ -137,10 +191,130 @@ func calculate(s string) int {
 	return operands[0]
 }
 
+type stack struct {
+	elem      []int
+	operators *OpeartorStack
+}
+
+func (s *stack) Push(elem int) {
+	s.elem = append(s.elem, elem)
+}
+
+// func (s *stack) pushOperator(string) {
+//
+// }
+func (s *stack) Size() int {
+	return len(s.elem)
+}
+func (s *stack) Execute() {
+	operand1 := s.elem[len(s.elem)-2]
+	operand2 := s.elem[len(s.elem)-1]
+	s.elem = s.elem[0 : len(s.elem)-2]
+	top := 0
+	op := s.operators.Pop()
+	switch op {
+	case "+":
+		top = operand1 + operand2
+	case "-":
+		top = operand1 - operand2
+	case "/":
+		top = operand1 / operand2
+	case "*":
+		top = operand1 / operand2
+	}
+	s.Push(top)
+}
+func (s *stack) Top() int {
+	return s.elem[len(s.elem)-1]
+}
+
+type OpeartorStack struct {
+	elemtns []string
+}
+
+func (s *OpeartorStack) Push(op string) {
+	s.elemtns = append(s.elemtns, op)
+}
+func (s *OpeartorStack) Top() string {
+	return s.elemtns[len(s.elemtns)-1]
+}
+func (s *OpeartorStack) Pop() string {
+	op := s.elemtns[len(s.elemtns)-1]
+	s.elemtns = s.elemtns[0 : len(s.elemtns)-1]
+	return op
+
+}
+func (s *OpeartorStack) Empty() bool {
+	return len(s.elemtns) == 0
+}
+
+func newStack(operators *OpeartorStack) *stack {
+	return &stack{
+		operators: operators,
+	}
+}
+func calculateUsingStack(s string) int {
+	if len(s) == 1 {
+		return int(s[0] - byte('0'))
+	}
+	ops := &OpeartorStack{}
+	stack := newStack(ops)
+	left := 0
+	right := 1
+	// remove all space
+	s = strings.Join(strings.Split(s, " "), "")
+	s = s + "#"
+	for ; right < len(s); right++ {
+		if unicode.IsDigit(rune(s[right])) && unicode.IsDigit(rune(s[right-1])) {
+			continue
+		}
+
+		if unicode.IsDigit(rune(s[left])) { // 找到了数字
+			operand, _ := strconv.Atoi(s[left:right])
+			stack.Push(operand)
+			if stack.Size() >= 2 && ops.Top() != "(" {
+				stack.Execute()
+			}
+		} else { // 找到了符号
+			op := s[left:right]
+			switch op {
+			case "+":
+				ops.Push(op)
+			case "-":
+				if left == 0 || s[left-1:left] == "(" {
+					stack.Push(0)
+				}
+				ops.Push(op)
+
+			case "(":
+				ops.Push(op)
+			case ")":
+				ops.Pop()
+				if stack.Size() >= 2 {
+					stack.Execute()
+				}
+			case "#":
+				if stack.Size() >= 2 {
+					stack.Execute()
+				}
+			default:
+			}
+		}
+		left = right
+	}
+	return stack.Top()
+}
+
 // @lc code=end
 func main() {
+	// fmt.Println(calculateUsingStack("1+2+3+4"))
+	// fmt.Println(calculateUsingStack("1+2-3+4"))
+	fmt.Println(calculateUsingStack("1+(3-(2-1))+4"))
+
 	// fmt.Println(calculate("1+2+3+4-5"))
 	// fmt.Println(calculate("(1+(4+5+2)-3)+(6+8)"))
-	fmt.Println(calculate("-2+ 1"))
+	// fmt.Println(calculate("-2+ 1"))
+
+	// fmt.Println(calculate("3+4-5*2"))
 
 }
