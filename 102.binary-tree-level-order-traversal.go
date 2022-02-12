@@ -28,9 +28,7 @@ func levelOrder(root *TreeNode) [][]int {
 
 	curLayerNode := []*TreeNode{root}
 	result := [][]int{}
-	depth := 0
 	for len(curLayerNode) != 0 {
-		depth := 1
 		curLayerValue := []int{}
 		nextLayerNode := []*TreeNode{}
 		for _, node := range curLayerNode {
