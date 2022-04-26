@@ -10,6 +10,8 @@
 // dp[i] =  dp[i-1] 		if price[i] < price[i-1]
 // 			price[i] - min	else
 //
+// TODO
+// 官方题解很值得一看，无论是贪心还是动态规划
 package main
 
 import "fmt"

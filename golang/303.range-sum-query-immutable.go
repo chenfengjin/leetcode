@@ -6,7 +6,7 @@
 package main
 
 // @lc code=start
-type NumArray struct {
+type NumArray1 struct {
 	preSum []int
 }
 

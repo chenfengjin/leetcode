@@ -7,6 +7,12 @@ package main
 
 import "fmt"
 
+// TODO
+// https://leetcode-cn.com/problems/sort-colors/solution/yan-se-fen-lei-by-leetcode-solution/
+// keys
+// 1. cur==right should also be checked
+// 2. can also be solved with two pointer or three pointer
+// 3. hashmap is a good choice
 // @lc code=start
 func sortColors(nums []int) {
 	left := 0
