@@ -23,11 +23,11 @@
 | 20   | Valid Parentheses                                          | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 21   | Merge Two Sorted Lists                                     | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 22   | Generate Parentheses                                       | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 23   | Merge k Sorted Lists                                       | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 24   | Swap Nodes in Pairs                                        | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 23   | Merge k Sorted Lists                                       | ✅   | ❌    | ❌   | ❌      | ❌    |
+| 24   | Swap Nodes in Pairs                                        | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 25   | Reverse Nodes in k-Group                                   | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 26   | Remove Duplicates from Sorted Array                        | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 27   | Remove Element                                             | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 26   | Remove Duplicates from Sorted Array                        | ✅   | ❌    | ❌   | ❌      | ❌    |
+| 27   | Remove Element                                             | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 28   | Find the Index of the First Occurrence in a String         | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 29   | Divide Two Integers                                        | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 30   | Substring with Concatenation of All Words                  | ❌   | ❌    | ❌   | ❌      | ❌    |
