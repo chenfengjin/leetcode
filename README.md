@@ -46,14 +46,14 @@
 | 43   | Multiply Strings                                           | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 44   | Wildcard Matching                                          | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 45   | Jump Game II                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 46   | Permutations                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 46   | Permutations                                               | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 47   | Permutations II                                            | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 48   | Rotate Image                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 49   | Group Anagrams                                             | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 50   | Pow(x, n)                                                  | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 51   | N-Queens                                                   | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 52   | N-Queens II                                                | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 53   | Maximum Subarray                                           | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 53   | Maximum Subarray                                           | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 54   | Spiral Matrix                                              | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 55   | Jump Game                                                  | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 56   | Merge Intervals                                            | ❌   | ❌    | ❌   | ❌      | ❌    |
@@ -70,7 +70,7 @@
 | 67   | Add Binary                                                 | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 68   | Text Justification                                         | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 69   | Sqrt(x)                                                    | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 70   | Climbing Stairs                                            | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 70   | Climbing Stairs                                            | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 71   | Simplify Path                                              | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 72   | Edit Distance                                              | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 73   | Set Matrix Zeroes                                          | ❌   | ❌    | ❌   | ❌      | ❌    |
@@ -78,7 +78,7 @@
 | 75   | Sort Colors                                                | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 76   | Minimum Window Substring                                   | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 77   | Combinations                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 78   | Subsets                                                    | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 78   | Subsets                                                    | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 79   | Word Search                                                | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 80   | Remove Duplicates from Sorted Array II                     | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 81   | Search in Rotated Sorted Array II                          | ❌   | ❌    | ❌   | ❌      | ❌    |
@@ -100,7 +100,7 @@
 | 97   | Interleaving String                                        | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 98   | Validate Binary Search Tree                                | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 99   | Recover Binary Search Tree                                 | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 100  | Same Tree                                                  | ✅  | ❌    | ❌   | ❌      | ❌    |
+| 100  | Same Tree                                                  | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 101  | Symmetric Tree                                             | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 102  | Binary Tree Level Order Traversal                          | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 103  | Binary Tree Zigzag Level Order Traversal                   | ❌   | ❌    | ❌   | ❌      | ❌    |
@@ -254,6 +254,7 @@
 | 250  | Count Univalue Subtrees                                    | ❌   | ❌    | ❌   | ❌      | ❌    |
 // Others 
 
-| 序号 | 题目英文                                    | cpp | rust | go  | python | java |
+| 序号 | 题目英文                                   | cpp | rust | go  | python | java |
 | ---- | ------------------------------------------ | --- | ---- | --- | ------ | ---- |
-| 2116   | Check if a Parentheses String Can Be Valid | ✅   | ❌    | ❌   | ❌      | ❌    |
+| 263  | Ugly Number                                | ✅   | ❌    | ❌   | ❌      | ❌    |
+| 2116 | Check if a Parentheses String Can Be Valid | ✅   | ❌    | ❌   | ❌      | ❌    |
