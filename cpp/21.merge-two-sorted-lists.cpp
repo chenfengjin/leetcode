@@ -1,0 +1,102 @@
+/*
+ * @lc app=leetcode id=21 lang=cpp
+ *
+ * [21] Merge Two Sorted Lists
+ *
+ * https://leetcode.com/problems/merge-two-sorted-lists/description/
+ *
+ * algorithms
+ * Easy (67.21%)
+ * Likes:    23899
+ * Dislikes: 2340
+ * Total Accepted:    5.5M
+ * Total Submissions: 8.2M
+ * Testcase Example:  '[1,2,4]\n[1,3,4]'
+ *
+ * You are given the heads of two sorted linked lists list1 and list2.
+ * 
+ * Merge the two lists into one sorted list. The list should be made by
+ * splicing together the nodes of the first two lists.
+ * 
+ * Return the head of the merged linked list.
+ * 
+ * 
+ * Example 1:
+ * 
+ * 
+ * Input: list1 = [1,2,4], list2 = [1,3,4]
+ * Output: [1,1,2,3,4,4]
+ * 
+ * 
+ * Example 2:
+ * 
+ * 
+ * Input: list1 = [], list2 = []
+ * Output: []
+ * 
+ * 
+ * Example 3:
+ * 
+ * 
+ * Input: list1 = [], list2 = [0]
+ * Output: [0]
+ * 
+ * 
+ * 
+ * Constraints:
+ * 
+ * 
+ * The number of nodes in both lists is in the range [0, 50].
+ * -100 <= Node.val <= 100
+ * Both list1 and list2 are sorted in non-decreasing order.
+ * 
+ * 
+ */
+
+#include "leetcode.h"
+// @lc code=start
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        ListNode *dummy = new ListNode();
+        ListNode *cur = dummy;
+        while (list1 && list2)
+        {
+            if (list1->val<list2->val){
+                cur->next = new ListNode(list1->val);
+                list1 = list1->next;
+            }else
+            {
+                cur->next = new ListNode(list2->val);
+                list2 = list2->next;
+            }
+            cur = cur->next;
+        }
+        list1 = list2 ? list2 : list1;
+        while(list1){
+            cur->next = new ListNode(list1->val);
+            list1 = list1->next;
+            cur = cur->next;
+        }
+
+        return dummy->next;
+    }
+};
+// @lc code=end
+
+TEST(mergeTwoLists,case1){
+    auto l1 = create_list_from_vector_int({1, 2, 4});
+    auto l2 = create_list_from_vector_int({1, 3, 4});
+    auto l3 = create_list_from_vector_int({1, 1, 2, 3, 4, 4});
+    ASSERT_TRUE(link_list_equal(Solution().mergeTwoLists(l1, l2), l3));
+}
