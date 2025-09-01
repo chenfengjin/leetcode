@@ -14,7 +14,7 @@
 | 11   | Container With Most Water                                  | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 12   | Integer to Roman                                           | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 13   | Roman to Integer                                           | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 14   | Longest Common Prefix                                      | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 14   | Longest Common Prefix                                      | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 15   | 3Sum                                                       | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 16   | 3Sum Closest                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 17   | Letter Combinations of a Phone Number                      | ❌   | ❌    | ❌   | ❌      | ❌    |
@@ -101,7 +101,7 @@
 | 98   | Validate Binary Search Tree                                | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 99   | Recover Binary Search Tree                                 | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 100  | Same Tree                                                  | ✅   | ❌    | ❌   | ❌      | ❌    |
-| 101  | Symmetric Tree                                             | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 101  | Symmetric Tree                                             | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 102  | Binary Tree Level Order Traversal                          | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 103  | Binary Tree Zigzag Level Order Traversal                   | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 104  | Maximum Depth of Binary Tree                               | ❌   | ❌    | ❌   | ❌      | ❌    |
@@ -141,7 +141,7 @@
 | 138  | Copy List with Random Pointer                              | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 139  | Word Break                                                 | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 140  | Word Break II                                              | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 141  | Linked List Cycle                                          | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 141  | Linked List Cycle                                          | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 142  | Linked List Cycle II                                       | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 143  | Reorder List                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 144  | Binary Tree Preorder Traversal                             | ❌   | ❌    | ❌   | ❌      | ❌    |
