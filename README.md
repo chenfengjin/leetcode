@@ -50,7 +50,7 @@
 | 47   | Permutations II                                            | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 48   | Rotate Image                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 49   | Group Anagrams                                             | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 50   | Pow(x, n)                                                  | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 50   | Pow(x, n)                                                  | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 51   | N-Queens                                                   | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 52   | N-Queens II                                                | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 53   | Maximum Subarray                                           | ✅   | ❌    | ❌   | ❌      | ❌    |
@@ -62,11 +62,11 @@
 | 59   | Spiral Matrix II                                           | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 60   | Permutation Sequence                                       | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 61   | Rotate List                                                | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 62   | Unique Paths                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 63   | Unique Paths II                                            | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 64   | Minimum Path Sum                                           | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 62   | Unique Paths                                               | ✅   | ❌    | ❌   | ❌      | ❌    |
+| 63   | Unique Paths II                                            | ✅   | ❌    | ❌   | ❌      | ❌    |
+| 64   | Minimum Path Sum                                           | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 65   | Valid Number                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 66   | Plus One                                                   | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 66   | Plus One                                                   | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 67   | Add Binary                                                 | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 68   | Text Justification                                         | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 69   | Sqrt(x)                                                    | ❌   | ❌    | ❌   | ❌      | ❌    |
@@ -104,16 +104,16 @@
 | 101  | Symmetric Tree                                             | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 102  | Binary Tree Level Order Traversal                          | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 103  | Binary Tree Zigzag Level Order Traversal                   | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 104  | Maximum Depth of Binary Tree                               | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 104  | Maximum Depth of Binary Tree                               | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 105  | Construct Binary Tree from Preorder and Inorder Traversal  | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 106  | Construct Binary Tree from Inorder and Postorder Traversal | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 107  | Binary Tree Level Order Traversal II                       | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 108  | Convert Sorted Array to Binary Search Tree                 | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 109  | Convert Sorted List to Binary Search Tree                  | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 110  | Balanced Binary Tree                                       | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 111  | Minimum Depth of Binary Tree                               | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 112  | Path Sum                                                   | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 113  | Path Sum II                                                | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 111  | Minimum Depth of Binary Tree                               | ✅   | ❌    | ❌   | ❌      | ❌    |
+| 112  | Path Sum                                                   | ✅   | ❌    | ❌   | ❌      | ❌    |
+| 113  | Path Sum II                                                | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 114  | Flatten Binary Tree to Linked List                         | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 115  | Distinct Subsequences                                      | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 116  | Populating Next Right Pointers in Each Node                | ❌   | ❌    | ❌   | ❌      | ❌    |
@@ -231,7 +231,7 @@
 | 228  | Summary Ranges                                             | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 229  | Majority Element II                                        | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 230  | Kth Smallest Element in a BST                              | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 231  | Power of Two                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 231  | Power of Two                                               | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 232  | Implement Queue using Stacks                               | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 233  | Number of Digit One                                        | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 234  | Palindrome Linked List                                     | ❌   | ❌    | ❌   | ❌      | ❌    |
