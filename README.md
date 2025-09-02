@@ -9,7 +9,7 @@
 | 6    | Zigzag Conversion                                          | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 7    | Reverse Integer                                            | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 8    | String to Integer (atoi)                                   | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 9    | Palindrome Number                                          | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 9    | Palindrome Number                                          | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 10   | Regular Expression Matching                                | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 11   | Container With Most Water                                  | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 12   | Integer to Roman                                           | ❌   | ❌    | ❌   | ❌      | ❌    |
@@ -17,8 +17,8 @@
 | 14   | Longest Common Prefix                                      | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 15   | 3Sum                                                       | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 16   | 3Sum Closest                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 17   | Letter Combinations of a Phone Number                      | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 18   | 4Sum                                                       | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 17   | Letter Combinations of a Phone Number                      | ✅   | ❌    | ❌   | ❌      | ❌    |
+| 18   | 4Sum                                                       | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 19   | Remove Nth Node From End of List                           | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 20   | Valid Parentheses                                          | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 21   | Merge Two Sorted Lists                                     | ✅   | ❌    | ❌   | ❌      | ❌    |
@@ -90,7 +90,7 @@
 | 87   | Scramble String                                            | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 88   | Merge Sorted Array                                         | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 89   | Gray Code                                                  | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 90   | Subsets II                                                 | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 90   | Subsets II                                                 | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 91   | Decode Ways                                                | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 92   | Reverse Linked List II                                     | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 93   | Restore IP Addresses                                       | ❌   | ❌    | ❌   | ❌      | ❌    |
