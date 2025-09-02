@@ -15,8 +15,8 @@
 | 12   | Integer to Roman                                           | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 13   | Roman to Integer                                           | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 14   | Longest Common Prefix                                      | ✅   | ❌    | ❌   | ❌      | ❌    |
-| 15   | 3Sum                                                       | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 16   | 3Sum Closest                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 15   | 3Sum                                                       | ✅   | ❌    | ❌   | ❌      | ❌    |
+| 16   | 3Sum Closest                                               | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 17   | Letter Combinations of a Phone Number                      | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 18   | 4Sum                                                       | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 19   | Remove Nth Node From End of List                           | ✅   | ❌    | ❌   | ❌      | ❌    |
@@ -39,8 +39,8 @@
 | 36   | Valid Sudoku                                               | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 37   | Sudoku Solver                                              | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 38   | Count and Say                                              | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 39   | Combination Sum                                            | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 40   | Combination Sum II                                         | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 39   | Combination Sum                                            | ✅   | ❌    | ❌   | ❌      | ❌    |
+| 40   | Combination Sum II                                         | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 41   | First Missing Positive                                     | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 42   | Trapping Rain Water                                        | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 43   | Multiply Strings                                           | ❌   | ❌    | ❌   | ❌      | ❌    |
@@ -216,7 +216,7 @@
 | 213  | House Robber II                                            | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 214  | Shortest Palindrome                                        | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 215  | Kth Largest Element in an Array                            | ❌   | ❌    | ❌   | ❌      | ❌    |
-| 216  | Combination Sum III                                        | ❌   | ❌    | ❌   | ❌      | ❌    |
+| 216  | Combination Sum III                                        | ✅   | ❌    | ❌   | ❌      | ❌    |
 | 217  | Contains Duplicate                                         | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 218  | The Skyline Problem                                        | ❌   | ❌    | ❌   | ❌      | ❌    |
 | 219  | Contains Duplicate II                                      | ❌   | ❌    | ❌   | ❌      | ❌    |
